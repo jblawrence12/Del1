@@ -34,7 +34,7 @@ public class CommentCountCheck extends AbstractCheck {
     
     @Override
     public void finishTree(DetailAST ast) {
-        log(ast.getLineNo(), CATCH_MSG + commentCount);
+        log(ast.getLineNo(), CATCH_MSG + commentCount + "JL");
     }
 
     @Override

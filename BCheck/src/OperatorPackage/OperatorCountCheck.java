@@ -12,7 +12,8 @@ public class OperatorCountCheck extends AbstractCheck {
 
     @Override
     public int[] getDefaultTokens() {
-        // token types that contain operators
+        // token types that contain operators from 
+    	//https://checkstyle.sourceforge.io/apidocs/com/puppycrawl/tools/checkstyle/checks/whitespace/OperatorWrapCheck.html
         return new int[] {
             TokenTypes.PLUS, TokenTypes.MINUS, TokenTypes.STAR, TokenTypes.DIV,
             TokenTypes.MOD, TokenTypes.BAND, TokenTypes.BOR, TokenTypes.BXOR,
@@ -33,7 +34,7 @@ public class OperatorCountCheck extends AbstractCheck {
     
     @Override
     public void finishTree(DetailAST ast) {
-        log(ast.getLineNo(), CATCH_MSG + operatorCount);
+        log(ast.getLineNo(), CATCH_MSG + operatorCount + "JL");
     }
 
     @Override
