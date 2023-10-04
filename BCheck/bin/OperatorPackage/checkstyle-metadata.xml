@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE checkstyle-metadata PUBLIC
+    "-//eclipse-cs//DTD Check Metadata 1.1//EN"
+    "http://eclipse-cs.sourceforge.net/dtds/checkstyle-metadata_1_1.dtd">
+<checkstyle-metadata>
+    <rule-group-metadata name="Operator Checks" priority="1600">
+        <description>Operator check for Del1Package</description>
+        
+        <rule-metadata name="OperatorCountCheck.name" internal-name="OperatorCountCheck" parent="TreeWalker">
+            <alternative-name internal-name="OperatorPackage.OperatorCountCheck" />
+            <description>Check for operators in the code.</description>
+        </rule-metadata>
+        
+    </rule-group-metadata>
+</checkstyle-metadata>
